@@ -9,7 +9,7 @@ const contactSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    password: {
+    mobile: {
         type: String,
         required: true
     }
