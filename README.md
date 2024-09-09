@@ -1,6 +1,6 @@
 # UserBackendAPI
 
-UserBackendAPI is a Node.js-based backend API for user management and data handling. It uses Express.js as the web framework and MongoDB for data storage. This robust and scalable solution provides a comprehensive set of features for managing user accounts and their associated data.
+UserBackendAPI is a Node.js-based backend API for user management and data handling. It uses Express.js as the web framework and MongoDB for data storage. It has a comprehensive set of features for managing user accounts and their associated data.
 
 ## Key Components
 
