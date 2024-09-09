@@ -61,7 +61,7 @@ The API is designed with a focus on:
 
 4. Start the server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## License
