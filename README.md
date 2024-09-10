@@ -64,6 +64,11 @@ The API is designed with a focus on:
    npm run dev
    ```
 
+## Documentation
+
+The documentation for how to test the UserBackendAPI endpoints is available in the [THUNDERCLIENT.MD](THUNDERCLIENT.MD) file.
+The Architecture of the API is available in the [ARCHITECTURE.MD](ARCHITECTURE.MD) file.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
