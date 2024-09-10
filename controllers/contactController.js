@@ -32,7 +32,7 @@ const createContact = asyncHandler(async (req, res) => {
     });
 
     // Add a log message for successful contact creation
-    console.log(`Contact created: ${contact.name} (ID: ${contact._id}) by ${req.user.username} (ID: ${req.user.id})`);
+    console.log(`Contact created: ${contact.name} (ID: ${contact._id}) by the user ${req.user.username} (ID: ${req.user.id})`);
 
     res.status(201).json(contact);
 });
@@ -83,7 +83,7 @@ const updateContact = asyncHandler(async (req,res) => {
     const updatedContact = await Contact.findByIdAndUpdate(req.params.id, req.body, {new: true});
     
     // Add a log message for successful contact update
-    console.log(`Contact updated: ${updatedContact.name} (ID: ${updatedContact._id}) for user ${req.user.username} (ID: ${req.user.id})`);
+    console.log(`Contact updated: ${updatedContact.name} (ID: ${updatedContact._id}) by the user ${req.user.username} (ID: ${req.user.id})`);
 
     res.status(200).json(updatedContact);
 });
@@ -105,7 +105,7 @@ const deleteContact = asyncHandler(async (req, res) => {
     await Contact.deleteOne({_id: req.params.id});
     
     // Add a log message for successful contact deletion
-    console.log(`Contact deleted: ${contact.name} (ID: ${contact._id}) by ${req.user.username} (ID: ${req.user.id})`);
+    console.log(`Contact deleted: ${contact.name} (ID: ${contact._id}) by the user ${req.user.username} (ID: ${req.user.id})`);
 
     res.status(200).json(contact);
 });
